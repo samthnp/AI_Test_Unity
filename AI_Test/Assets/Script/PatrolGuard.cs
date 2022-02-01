@@ -17,6 +17,12 @@ public class PatrolGuard : MonoBehaviour
     {
         print("Spawn light");
         alertLight = Instantiate(alertLight, spawnLocation.position, Quaternion.identity);
+        AttachLightToParent();
+    }
+
+    private void AttachLightToParent()
+    {
+        alertLight.transform.parent = gameObject.transform;
     }
 
     public void DestroyAlertLight()

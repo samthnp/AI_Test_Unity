@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace CMF
 {
@@ -21,6 +22,14 @@ namespace CMF
 		{
 			lockMode = CursorLockMode.Locked;
 			Cursor.lockState = lockMode;
+		}
+
+		private void Update()
+		{
+			if (Input.GetKeyUp(KeyCode.R))
+			{
+				SceneManager.LoadScene("MainScene");
+			}
 		}
 
 		public override float GetHorizontalMovementInput()

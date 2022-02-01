@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4789513386097086478}
   - component: {fileID: 4789513386097086479}
   m_Layer: 0
-  m_Name: AlertLight
+  m_Name: Light_Patrol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,9 +42,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 2.5
-  m_Range: 10
+  m_Color: {r: 1, g: 0.9083079, b: 0, a: 1}
+  m_Intensity: 10
+  m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
