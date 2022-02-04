@@ -8,9 +8,22 @@ public class Sentry : MonoBehaviour
     private Transform spawnLocation;
     public GameObject alertLight;
 
+    public float rotationSpeed;
+
     private void Start()
     {
         spawnLocation = this.transform;
+    }
+
+    void Update()
+    {
+        this.transform.Rotate(0,0,rotationSpeed * Time.deltaTime);
+        print("Rotate");
+    }
+
+    public void IncreaseRotationSpeed()
+    {
+        rotationSpeed = rotationSpeed + 50;
     }
 
     public void SelfDestruct()
